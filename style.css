@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral:200,300,400&display=swap');
+
+/* style reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Spectral', serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end style reset */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#post-title {
+    width: 100%;
+    /* increase height to push title down */
+    height: 10%;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    margin: 0 auto;
+    position: relative;
+}
+
+#post-title-statement {
+    width: 100%;
+    /* increase height to push statement down */
+    height: 20%;
+    /* background-color: rgba(245, 245, 245, 0.1); */
+    position: relative;
+}
+
+#post-book-cover {
+    margin: 10em 0 10em 22em;
+    width: 13%;
+    height: auto;
+    position: relative;
+}
+
+#post-book-cover img{
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    letter-spacing: 2px;
+    color: hotpink;
+}
+
+h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.post-sub-header {
+    width: 100%;
+    height: 210px;
+    padding: 4% 0% 0 0%;
+    position: relative;
+}
+
+.post-sub-header-text {
+    /* critical to maintaining padding */
+    width: 80%;
+    padding: 0 10% 0 10%;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.post-main {
+    width: 100%;
+    height: 1180px;
+    position: relative;
+    background-image: url("images/main.jpeg") ;
+}
+
+#post-main-initial {
+    width: 100%;
+    height: 420px;
+    background-color: rgba(255, 105, 180, 0.4)
+}
+
+#post-main-initial blockquote {
+    width: 80%;
+    padding: 9% 10% 0 10%;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+
+.author {
+    width: 80%;
+    padding: 4% 10% 0 10%;;
+    position: relative;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: white;
+}
+
+.author-credentials {
+    width: 80%;
+    padding: 0 10% 0 10%;
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: white;
+    opacity: 0.8;
+}
+
+#post-main-secondary {
+    width: 100%;
+    height: 850px;
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+.post-main-statement {
+    width: 80%;
+    padding: 7% 10% 0 10%;;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    color: black;
+}
+
+.post-main-quote {
+    width: 80%;
+    padding: 7% 10% 0 10%;
+    position: relative;
+    font-size: 4vw;
+    text-align: center;
+    line-height: 50px;
+    color: hotpink;
+    font-style: italic;
+}
+
+#post-social {
+    width: 100%;
+    height: 420px;
+    background-color: rgba(255, 105, 180, 0.4)
+}
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        background-color: hotpink;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+
+}
+
+
+
