@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>title</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -9,10 +10,12 @@
 
   <div class='post-header'>
     <div id='post-title'>
-      <h2>The Official Edith Windsor Site</h2>
+      <h2 class='desktop'>The Official Edith Windsor Site</h2>
+      <h2 class='mobile'>The Official <br>Edith Windsor Site</h2>
     </div>
     <div id='post-title-statement'>
         <h1>a wild and precious life</h1>
+        <h1 id='h1-mobile'>a wild and <br> precious life</h1>
     </div>
     <div id='post-book-cover'>
       <img id ='book-cover-img' src='images/book-cover.jpg'></img>
@@ -20,8 +23,18 @@
     </div>
   </div>
 
+  <div id='post-book-cover-mobile'>
+    <img id ='book-cover-img' src='images/book-cover.jpg'></img>
+    <a href='' target='_blank'><img id='book-cta-mobile' src='images/cta-desktop.png'></a>
+  </div>
+
+  <div id='post-book-cover-tablet'>
+    <img id ='book-cover-img' src='images/book-cover.jpg'></img>
+    <a href='' target='_blank'><img id='book-cta-tablet' src='images/cta-desktop.png'></a>
+  </div>
+
   <div class='post-sub-header'>
-    <p class='post-sub-header-text'>Lorem ipsum dolor amet blog heirloom listicle letterpress tilde fixie. Sustainable asymmetrical franzen gastropub cardigan keffiyeh. Mumblecore taiyaki whatever cred. Ethical retro heirloom, helvetica portland jean shorts semiotics cloud bread edison bulb slow-carb. Hot chicken chia chillwave schlitz. Activated charcoal scenester selfies man bun 3 wolf moon jean shorts umami gentrify. Quinoa cardigan affogato fashion axe poke ennui meditation. Umami direct trade VHS disrupt seitan retro food truck. Lorem ipsum dolor amet blog heirloom listicle letterpress tilde fixie. Sustainable asymmetrical franzen gastropub cardigan keffiyeh. Mumblecore taiyaki whatever cred. Ethical retro heirloom, helvetica portland jean shorts semiotics cloud bread edison bulb slow-carb. Hot chicken chia chillwave schlitz.</p>
+    <p class='post-sub-header-text'>Edie Windsor became internationally famous when she sued the US government, seeking federal recognition for her marriage to Thea Spyder, her partner of more than four decades. The Supreme Court ruled in Edie's favor, a landmark victory that set the stage for full marriage equality in the U.S.. Beloved by the LGBTQ community, Edie embraced her new role as an icon; she had already been living an extraordinary and groundbreaking life for decades.</p>
   </div>  
 
   <div class='post-main'>
@@ -38,14 +51,26 @@
   </div>
 
   <div id='post-social'>
-    <div id='post-social-container'>
+      <div class="w3-content w3-display-container" style="width: 100%">
+          <img class="mySlides" src="https://dummyimage.com/1940x660/efac45/aaa" style="width:100%">
+          <img class="mySlides" src="https://dummyimage.com/1940x660/ed28ed/aaa" style="width:100%">
+          <img class="mySlides" src="https://dummyimage.com/1940x660/6cc4e6/aaa" style="width:100%">
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <!-- <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div> -->
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          </div>
+        </div>
+    <!-- <div id='post-social-container'>
         <div class='social-post'></div>
         <div class='social-post'></div>
         <div class='social-post'></div>
         <div class='social-post'></div>
         <div class='social-post'></div>
         <div class='social-post'></div>
-    </div>
+    </div> -->
   </div>
 
   <style>
@@ -61,11 +86,10 @@
     }
   
     .post-header-enhanced {
-      /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/401949/largeimg.jpg); */
       background-image: url("images/header-img.jpg");
     }
   
-    @supports (background-image: filter(url('i.jpg'), blur(1px))) {
+    @supports (background-image: filter(url('images/header-img.jpg'), blur(1px))) {
       .post-header {
         transform: translateZ(0);
       }
@@ -74,10 +98,10 @@
       }
       @keyframes sharpen {
         from {
-          background-image: filter(url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/401949/largeimg.jpg), blur(20px));
+          background-image: filter(url("images/header-img.jpg"), blur(20px));
         }
         to {
-          background-image: filter(url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/401949/largeimg.jpg), blur(0px));
+          background-image: filter(url("images/header-img.jpg"), blur(0px));
         }
       }
     }
